@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Riego IoT</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@500;600&family=DM+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+  --c0: #CAD2C5;
+  --c1: #84A98C;
+  --c2: #52796F;
+  --c3: #354F52;
+  --c4: #2F3E46;
+  --bg: #F0F4EF;
+  --surf: #fff;
+  --surf2: #EEF2EC;
+  --border: rgba(82,121,111,0.18);
+  --border2: rgba(82,121,111,0.32);
+  --txt: #2F3E46;
+  --muted: #52796F;
+  --r: 10px;
+  --rl: 14px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--txt);
+  font-size: 13px;
+  min-height: 100vh;
+}
+
+nav {
+  background: var(--c4);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--c0);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 32px;
+}
+
+.nav-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--c1);
+  border-radius: 50%;
+}
+
+.nav-tabs {
+  display: flex;
+  flex: 1;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: rgba(202,210,197,0.65);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0 16px;
+  height: 52px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.18s;
+}
+
+.tab-btn:hover {
+  color: var(--c0);
+}
+
+.tab-btn.active {
+  color: #fff;
+  border-bottom-color: var(--c1);
+}
+
+.nav-badge {
+  background: rgba(132,169,140,0.18);
+  color: var(--c1);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 99px;
+  margin-left: 6px;
+}
+
+.live-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: var(--c1);
+  font-family: 'DM Mono', monospace;
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--c1);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+.page {
+  display: none;
+  padding: 24px;
+}
+
+.page.active {
+  display: block;
+}
+
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.kpi {
+  background: var(--surf);
+  border: 0.5px solid var(--border);
+  border-radius: var(--r);
+  padding: 16px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.kpi::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--c1);
+}
+
+.kpi-lbl {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.kpi-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--c4);
+  line-height: 1.05;
+  margin: 4px 0 2px;
+}
+
+.kpi-sub {
+  font-size: 11px;
+  color: var(--c2);
+}
+
+.g2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.g3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.g57 {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 14px;
+}
+
+.mb14 {
+  margin-bottom: 14px;
+}
+
+.card {
+  background: var(--surf);
+  border: 0.5px solid var(--border);
+  border-radius: var(--rl);
+  overflow: hidden;
+}
+
+.card-head {
+  background: var(--surf2);
+  border-bottom: 0.5px solid var(--border);
+  padding: 11px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--c3);
+}
+
+.card-body {
+  padding: 18px;
+}
+
+.node-sel {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.nsbtn {
+  background: var(--surf);
+  border: 1px solid var(--border2);
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  padding: 5px 13px;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.nsbtn.active {
+  background: var(--c3);
+  border-color: var(--c3);
+  color: #fff;
+}
+
+.badge-on,
+.badge-off {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 99px;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-on {
+  background: #d4f0df;
+  color: #1a6b39;
+  border: 1px solid #a3d9b3;
+}
+
+.badge-off {
+  background: #fde8e8;
+  color: #7b1a1a;
+  border: 1px solid #f5c6cb;
+}
+
+.nstat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.nstat {
+  background: var(--surf2);
+  border-left: 2px solid var(--c1);
+  border-radius: 6px;
+  padding: 9px 12px;
+}
+
+.nstat-lbl {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.nstat-val {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  color: var(--c4);
+  margin-top: 2px;
+}
+
+.sec-lbl {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 0.5px solid var(--border);
+  padding-bottom: 7px;
+  margin-bottom: 13px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: var(--r);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--c3);
+  color: #fff;
+}
+
+.btn-danger {
+  background: transparent;
+  border: 1.5px solid #b00020;
+  color: #b00020;
+}
+
+.btn-danger:hover {
+  background: #b00020;
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--c2);
+  color: var(--c2);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+select,
+input[type=number] {
+  background: var(--surf);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  color: var(--txt);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.api-box {
+  background: var(--c4);
+  color: var(--c0);
+  border-radius: 7px;
+  padding: 12px 14px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  min-height: 56px;
+  margin-top: 12px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.data-table th {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border2);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.data-table td {
+  padding: 8px 10px;
+  border-bottom: 0.5px solid var(--border);
+  color: var(--c4);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+}
+
+.chart-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.notif {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--c4);
+  color: var(--c0);
+  border-left: 3px solid var(--c1);
+  border-radius: 7px;
+  padding: 10px 16px;
+  font-size: 12px;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s;
+  pointer-events: none;
+}
+
+.notif.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+hr {
+  border: none;
+  border-top: 0.5px solid var(--border);
+  margin: 16px 0;
+}
+
+@keyframes pulse {
+  0%,100% {
+    box-shadow: 0 0 0 2px rgba(132,169,140,.3);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(132,169,140,0);
+  }
+}
+
+@media (max-width: 900px) {
+  .kpi-strip,
+  .g2,
+  .g3,
+  .g57 {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    overflow-x: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-brand"><div class="nav-dot"></div>Riego IoT</div>
+  <div class="nav-tabs">
+    <button class="tab-btn active" data-tab="estado">Estado general</button>
+    <button class="tab-btn" data-tab="control">Control</button>
+    <button class="tab-btn" data-tab="datos">Datos</button>
+    <button class="tab-btn" data-tab="alertas">Alertas <span class="nav-badge" id="nb-alertas">0</span></button>
+    <button class="tab-btn" data-tab="metricas">Métricas</button>
+  </div>
+  <div class="live-bar"><div class="live-dot"></div><span id="live-ts">—</span></div>
+</nav>
+
+<div id="notif" class="notif"></div>
+
+<!-- ESTADO GENERAL -->
+<div class="page active" id="page-estado">
+  <div class="kpi-strip">
+    <div class="kpi">
+      <div class="kpi-lbl">Nodos activos</div>
+      <div class="kpi-val" id="kpi-nodos">—</div>
+      <div class="kpi-sub">conectados</div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi-lbl">Riego activo</div>
+      <div class="kpi-val" id="kpi-riego">—</div>
+      <div class="kpi-sub">irrigando ahora</div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi-lbl">Alertas</div>
+      <div class="kpi-val" id="kpi-alertas">—</div>
+      <div class="kpi-sub">registradas</div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi-lbl">Incidencias</div>
+      <div class="kpi-val" id="kpi-incidencias">—</div>
+      <div class="kpi-sub">detectadas</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:14px;">
+    <div class="sec-lbl">Filtrar por nodo</div>
+    <div class="node-sel" id="node-selector">
+      <button class="nsbtn active" data-node="ALL">Todos</button>
+    </div>
+  </div>
+
+  <div class="g57 mb14">
+    <div class="card">
+      <div class="card-head">
+        <span class="card-title">Estado del nodo seleccionado</span>
+        <span id="estado-badge"></span>
+      </div>
+      <div class="card-body">
+        <div class="nstat-grid">
+          <div class="nstat"><div class="nstat-lbl">Nodo</div><div class="nstat-val" id="ns-node">—</div></div>
+          <div class="nstat"><div class="nstat-lbl">Estado sistema</div><div class="nstat-val" id="ns-sistema">—</div></div>
+          <div class="nstat"><div class="nstat-lbl">Temperatura</div><div class="nstat-val" id="ns-temp">—</div></div>
+          <div class="nstat"><div class="nstat-lbl">Humedad aire</div><div class="nstat-val" id="ns-haire">—</div></div>
+          <div class="nstat"><div class="nstat-lbl">Humedad suelo</div><div class="nstat-val" id="ns-hsuelo">—</div></div>
+          <div class="nstat"><div class="nstat-lbl">Última lectura</div><div class="nstat-val" id="ns-ts" style="font-size:10px">—</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Últimos estados por nodo</span></div>
+      <div class="card-body" style="padding:0;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Nodo</th>
+              <th>Temp.</th>
+              <th>H. aire</th>
+              <th>H. suelo</th>
+              <th>Riego</th>
+              <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-estados"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="g3">
+    <div class="card">
+      <div class="card-head"><span class="card-title">Temperatura</span></div>
+      <div class="card-body"><div class="chart-wrap" style="height:240px"><canvas id="chart-temp"></canvas></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Humedad del suelo</span></div>
+      <div class="card-body"><div class="chart-wrap" style="height:240px"><canvas id="chart-hsuelo"></canvas></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Humedad del aire</span></div>
+      <div class="card-body"><div class="chart-wrap" style="height:240px"><canvas id="chart-haire"></canvas></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTROL -->
+<div class="page" id="page-control">
+  <div class="g2">
+    <div class="card">
+      <div class="card-head"><span class="card-title">Control manual de actuación</span></div>
+      <div class="card-body">
+        <div style="margin-bottom:14px;">
+          <label for="sel-nodo-ctrl">Nodo de destino</label>
+          <select id="sel-nodo-ctrl"></select>
+        </div>
+
+        <div class="g2" style="gap:10px">
+          <button class="btn btn-primary btn-full" id="btn-on">Activar riego</button>
+          <button class="btn btn-danger btn-full" id="btn-off">Desactivar</button>
+        </div>
+
+        <div class="sec-lbl" style="margin-top:18px">Respuesta API</div>
+        <div class="api-box" id="api-actuacion">— Sin respuesta —</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Procesamiento por lote</span></div>
+      <div class="card-body">
+        <div class="sec-lbl">Limpieza de datos</div>
+
+        <label for="inp-limite-limpiar">Cantidad de registros</label>
+        <input type="number" id="inp-limite-limpiar" value="50" min="1" max="100">
+
+        <br><br>
+        <button class="btn btn-outline" id="btn-limpiar">Ejecutar limpieza</button>
+
+        <hr>
+
+        <div class="sec-lbl">Cálculo de métricas</div>
+
+        <label for="inp-limite-metricas">Cantidad de registros</label>
+        <input type="number" id="inp-limite-metricas" value="50" min="1" max="200">
+
+        <br><br>
+        <button class="btn btn-primary" id="btn-metricas">Calcular métricas</button>
+
+        <div class="sec-lbl" style="margin-top:18px">Respuesta API</div>
+        <div class="api-box" id="api-proc">— Sin respuesta —</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DATOS -->
+<div class="page" id="page-datos">
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:400px;margin-bottom:18px">
+    <div class="kpi"><div class="kpi-lbl">Datos brutos</div><div class="kpi-val" id="cnt-brutos">—</div><div class="kpi-sub">registros cargados</div></div>
+    <div class="kpi"><div class="kpi-lbl">Datos limpios</div><div class="kpi-val" id="cnt-limpios">—</div><div class="kpi-sub">registros cargados</div></div>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="card-head"><span class="card-title">Datos brutos</span></div>
+      <div class="card-body" style="padding:0">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Nodo</th><th>Temp.</th><th>H. aire</th><th>H. suelo</th><th>Timestamp</th></tr></thead>
+          <tbody id="tbody-brutos"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Datos limpios</span></div>
+      <div class="card-body" style="padding:0">
+        <table class="data-table">
+          <thead><tr><th>ID bruto</th><th>Nodo</th><th>Temp.</th><th>H. aire</th><th>H. suelo</th><th>Timestamp</th></tr></thead>
+          <tbody id="tbody-limpios"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ALERTAS -->
+<div class="page" id="page-alertas">
+  <div class="g57 mb14">
+    <div class="card">
+      <div class="card-head"><span class="card-title">Distribución de alertas</span></div>
+      <div class="card-body"><div class="chart-wrap" style="height:280px"><canvas id="chart-alertas-dist"></canvas></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Registro de alertas</span></div>
+      <div class="card-body" style="padding:0">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Nodo</th><th>Tipo</th><th>Timestamp</th></tr></thead>
+          <tbody id="tbody-alertas"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="g57">
+    <div class="card">
+      <div class="card-head"><span class="card-title">Incidencias por tipo</span></div>
+      <div class="card-body"><div class="chart-wrap" style="height:260px"><canvas id="chart-incidencias"></canvas></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Registro de incidencias</span></div>
+      <div class="card-body" style="padding:0">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Nodo</th><th>Campo</th><th>Tipo</th><th>Descripción</th></tr></thead>
+          <tbody id="tbody-incidencias"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- METRICAS -->
+<div class="page" id="page-metricas">
+  <div class="g2 mb14">
+    <div class="card">
+      <div class="card-head"><span class="card-title">Temperatura media por cálculo</span></div>
+      <div class="card-body"><div class="chart-wrap" style="height:280px"><canvas id="chart-temp-media"></canvas></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Humedad suelo media por cálculo</span></div>
+      <div class="card-body"><div class="chart-wrap" style="height:280px"><canvas id="chart-suelo-media"></canvas></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><span class="card-title">Tabla de métricas estadísticas</span></div>
+    <div class="card-body" style="padding:0">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nodo</th>
+            <th>Temp. media</th>
+            <th>Temp. max</th>
+            <th>Temp. min</th>
+            <th>H. suelo media</th>
+            <th>Fecha cálculo</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-metricas"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+
+<script>
+const BASE_URL = 'http://localhost:1880/api';
+
+const COLORS = {
+  'PYTHON_VIRTUAL_1': '#52796F',
+  'ESP32_1': '#84A98C',
+  'SIM_1': '#354F52',
+  'API_MANUAL': '#2F3E46'
+};
+
+let selectedNode = 'ALL';
+let charts = {};
+
+let DATA = {
+  estados: [],
+  brutos: [],
+  limpios: [],
+  alertas: [],
+  incidencias: [],
+  metricas: []
+};
+
+/* ================================
+   API REAL NODE-RED
+================================ */
+
+async function apiGet(endpoint) {
+  try {
+    const response = await fetch(BASE_URL + endpoint);
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return await response.json();
+  } catch (error) {
+    console.error('GET error', endpoint, error);
+    return null;
+  }
+}
+
+async function apiPost(endpoint, body) {
+  try {
+    const response = await fetch(BASE_URL + endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+
+    const text = await response.text();
+
+    try {
+      return JSON.parse(text);
+    } catch {
+      return { ok: response.ok, respuesta: text };
+    }
+  } catch (error) {
+    console.error('POST error', endpoint, error);
+    return { ok: false, error: error.message };
+  }
+}
+
+function unwrapDatos(response) {
+  if (!response) return [];
+  if (Array.isArray(response)) return response;
+  if (Array.isArray(response.datos)) return response.datos;
+  return [];
+}
+
+async function cargarDatos() {
+  const [
+    estadoResp,
+    brutosResp,
+    limpiosResp,
+    alertasResp,
+    incidenciasResp,
+    metricasResp
+  ] = await Promise.all([
+    apiGet('/estado-nodos'),
+    apiGet('/datos-brutos?limit=100'),
+    apiGet('/datos-limpios?limit=100'),
+    apiGet('/alertas?limit=100'),
+    apiGet('/incidencias?limit=100'),
+    apiGet('/metricas?limit=50')
+  ]);
+
+  DATA.estados = unwrapDatos(estadoResp);
+  DATA.brutos = unwrapDatos(brutosResp);
+  DATA.limpios = unwrapDatos(limpiosResp);
+  DATA.alertas = unwrapDatos(alertasResp);
+  DATA.incidencias = unwrapDatos(incidenciasResp);
+  DATA.metricas = unwrapDatos(metricasResp);
+
+  actualizarTodo();
+}
+
+/* ================================
+   GETTERS REALES
+================================ */
+
+function getEstados() {
+  return DATA.estados || [];
+}
+
+function getData() {
+  return DATA.brutos || [];
+}
+
+function getLimpios() {
+  return DATA.limpios || [];
+}
+
+function getAlertas() {
+  return DATA.alertas || [];
+}
+
+function getIncidencias() {
+  return DATA.incidencias || [];
+}
+
+function getMetricas() {
+  return DATA.metricas || [];
+}
+
+function getNodes() {
+  const set = new Set();
+
+  getEstados().forEach(r => r.node_id && set.add(r.node_id));
+  getData().forEach(r => r.node_id && set.add(r.node_id));
+  getLimpios().forEach(r => r.node_id && set.add(r.node_id));
+
+  return Array.from(set);
+}
+
+/* ================================
+   UTILIDADES
+================================ */
+
+function notify(msg) {
+  const n = document.getElementById('notif');
+  n.textContent = msg;
+  n.classList.add('show');
+  setTimeout(() => n.classList.remove('show'), 2500);
+}
+
+function fmt(v, fallback = '—') {
+  return v === null || v === undefined || v === '' ? fallback : v;
+}
+
+function num(v) {
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+function getColor(node) {
+  return COLORS[node] || '#52796F';
+}
+
+function makeChart(id, type, labels, datasets, opts = {}) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  if (charts[id]) charts[id].destroy();
+
+  charts[id] = new Chart(el, {
+    type,
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: datasets.length > 1,
+          labels: { color: '#52796F', font: { size: 10 } }
+        },
+        ...(opts.plugins || {})
+      },
+      scales: type !== 'pie' && type !== 'doughnut' ? {
+        x: {
+          grid: { color: 'rgba(82,121,111,0.08)' },
+          ticks: { color: '#52796F', font: { size: 10 } }
+        },
+        y: {
+          grid: { color: 'rgba(82,121,111,0.08)' },
+          ticks: { color: '#52796F', font: { size: 10 } }
+        }
+      } : {},
+      ...opts
+    }
+  });
+}
+
+function groupByNode(rows) {
+  const grouped = {};
+  rows.forEach(r => {
+    const node = r.node_id || 'SIN_NODO';
+    if (!grouped[node]) grouped[node] = [];
+    grouped[node].push(r);
+  });
+  return grouped;
+}
+
+function ordenarPorFecha(rows, field = 'timestamp_sensor') {
+  return [...rows].sort((a, b) => {
+    return new Date(a[field]) - new Date(b[field]);
+  });
+}
+
+/* ================================
+   NAVEGACION
+================================ */
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+
+    btn.classList.add('active');
+    document.getElementById('page-' + btn.dataset.tab).classList.add('active');
+
+    setTimeout(() => {
+      Object.values(charts).forEach(ch => ch.resize && ch.resize());
+    }, 150);
+  });
+});
+
+/* ================================
+   SELECTOR DE NODOS
+================================ */
+
+function construirSelectorNodos() {
+  const cont = document.getElementById('node-selector');
+  const nodes = getNodes();
+
+  cont.innerHTML = `<button class="nsbtn ${selectedNode === 'ALL' ? 'active' : ''}" data-node="ALL">Todos</button>`;
+
+  nodes.forEach(node => {
+    cont.innerHTML += `<button class="nsbtn ${selectedNode === node ? 'active' : ''}" data-node="${node}">${node}</button>`;
+  });
+
+  document.querySelectorAll('.nsbtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.nsbtn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedNode = btn.dataset.node;
+
+      updateEstadoCard();
+      updateLineCharts();
+    });
+  });
+
+  const select = document.getElementById('sel-nodo-ctrl');
+  select.innerHTML = '';
+
+  nodes.forEach(node => {
+    const option = document.createElement('option');
+    option.value = node;
+    option.textContent = node;
+    select.appendChild(option);
+  });
+
+  if (nodes.includes('PYTHON_VIRTUAL_1')) {
+    select.value = 'PYTHON_VIRTUAL_1';
+  }
+}
+
+/* ================================
+   KPIS
+================================ */
+
+function updateKPIs() {
+  const estados = getEstados();
+  const alertas = getAlertas();
+  const incidencias = getIncidencias();
+
+  document.getElementById('kpi-nodos').textContent = estados.length;
+  document.getElementById('kpi-riego').textContent = estados.filter(e => e.estado_riego === 'ON').length;
+  document.getElementById('kpi-alertas').textContent = alertas.length;
+  document.getElementById('kpi-incidencias').textContent = incidencias.length;
+  document.getElementById('nb-alertas').textContent = alertas.length;
+}
+
+/* ================================
+   ESTADO
+================================ */
+
+function updateEstadoCard() {
+  const estados = getEstados();
+
+  if (estados.length === 0) {
+    document.getElementById('ns-node').textContent = 'Sin datos';
+    document.getElementById('ns-sistema').textContent = 'API sin respuesta';
+    document.getElementById('ns-temp').textContent = '—';
+    document.getElementById('ns-haire').textContent = '—';
+    document.getElementById('ns-hsuelo').textContent = '—';
+    document.getElementById('ns-ts').textContent = '—';
+    document.getElementById('estado-badge').innerHTML = '<span class="badge-off">Sin conexión</span>';
+    return;
+  }
+
+  let row = estados[0];
+
+  if (selectedNode !== 'ALL') {
+    row = estados.find(e => e.node_id === selectedNode) || row;
+  } else {
+    row = estados.find(e => e.node_id === 'PYTHON_VIRTUAL_1') || estados[0];
+  }
+
+  document.getElementById('ns-node').textContent = fmt(row.node_id);
+  document.getElementById('ns-sistema').textContent = fmt(row.estado_sistema);
+  document.getElementById('ns-temp').textContent = fmt(row.temperatura) + ' °C';
+  document.getElementById('ns-haire').textContent = fmt(row.humedad_aire) + ' %';
+  document.getElementById('ns-hsuelo').textContent = fmt(row.humedad_suelo);
+  document.getElementById('ns-ts').textContent = fmt(row.timestamp_sensor);
+
+  document.getElementById('estado-badge').innerHTML =
+    row.estado_riego === 'ON'
+      ? '<span class="badge-on">Riego ON</span>'
+      : '<span class="badge-off">Riego OFF</span>';
+}
+
+/* ================================
+   TABLAS
+================================ */
+
+function fillTable(tbodyId, rows, cols) {
+  const tb = document.getElementById(tbodyId);
+  if (!tb) return;
+
+  if (!rows || rows.length === 0) {
+    tb.innerHTML = `<tr><td colspan="${cols.length}">Sin datos disponibles</td></tr>`;
+    return;
+  }
+
+  tb.innerHTML = rows.map(r => {
+    return '<tr>' + cols.map(c => `<td>${fmt(r[c])}</td>`).join('') + '</tr>';
+  }).join('');
+}
+
+function updateEstadosTable() {
+  fillTable(
+    'tbody-estados',
+    getEstados(),
+    ['node_id', 'temperatura', 'humedad_aire', 'humedad_suelo', 'estado_riego', 'timestamp_sensor']
+  );
+}
+
+function updateDatosTables() {
+  const brutos = getData();
+  const limpios = getLimpios();
+
+  document.getElementById('cnt-brutos').textContent = brutos.length;
+  document.getElementById('cnt-limpios').textContent = limpios.length;
+
+  fillTable(
+    'tbody-brutos',
+    brutos.slice(0, 30),
+    ['id', 'node_id', 'temperatura', 'humedad_aire', 'humedad_suelo', 'timestamp_sensor']
+  );
+
+  fillTable(
+    'tbody-limpios',
+    limpios.slice(0, 30),
+    ['lectura_bruta_id', 'node_id', 'temperatura', 'humedad_aire', 'humedad_suelo', 'timestamp_sensor']
+  );
+}
+
+function updateAlertasTable() {
+  fillTable(
+    'tbody-alertas',
+    getAlertas().slice(0, 50),
+    ['id', 'node_id', 'tipo_alerta', 'timestamp_alerta']
+  );
+
+  fillTable(
+    'tbody-incidencias',
+    getIncidencias().slice(0, 50),
+    ['id', 'node_id', 'campo_afectado', 'tipo_incidencia', 'descripcion']
+  );
+}
+
+function updateMetricasTable() {
+  fillTable(
+    'tbody-metricas',
+    getMetricas().slice(0, 50),
+    ['id', 'node_id', 'temperatura_media', 'temperatura_maxima', 'temperatura_minima', 'humedad_suelo_media', 'fecha_calculo']
+  );
+}
+
+/* ================================
+   GRAFICAS DE DATOS BRUTOS
+================================ */
+
+function updateLineCharts() {
+  let rows = ordenarPorFecha(getData(), 'timestamp_sensor');
+
+  if (selectedNode !== 'ALL') {
+    rows = rows.filter(r => r.node_id === selectedNode);
+  }
+
+  const grouped = groupByNode(rows);
+  const labels = [...new Set(rows.map(r => r.timestamp_sensor))].slice(-40);
+
+  const buildDataset = (field) => {
+    return Object.entries(grouped).map(([node, nodeRows]) => {
+      const map = {};
+      nodeRows.forEach(r => map[r.timestamp_sensor] = num(r[field]));
+
+      return {
+        label: node,
+        data: labels.map(l => map[l] ?? null),
+        borderColor: getColor(node),
+        backgroundColor: getColor(node) + '33',
+        pointRadius: 2,
+        borderWidth: 1.8,
+        tension: 0.35,
+        spanGaps: true
+      };
+    });
+  };
+
+  makeChart('chart-temp', 'line', labels, buildDataset('temperatura'));
+  makeChart('chart-hsuelo', 'line', labels, buildDataset('humedad_suelo'));
+  makeChart('chart-haire', 'line', labels, buildDataset('humedad_aire'));
+}
+
+/* ================================
+   ALERTAS E INCIDENCIAS
+================================ */
+
+function updateAlertCharts() {
+  const alertas = getAlertas();
+  const incidencias = getIncidencias();
+
+  const alertTipos = [...new Set(alertas.map(a => a.tipo_alerta || 'SIN_TIPO'))];
+
+  const alertData = alertTipos.map(tipo => {
+    return alertas.filter(a => (a.tipo_alerta || 'SIN_TIPO') === tipo).length;
+  });
+
+  makeChart(
+    'chart-alertas-dist',
+    'bar',
+    alertTipos,
+    [{
+      label: 'Alertas',
+      data: alertData,
+      backgroundColor: '#52796F',
+      borderRadius: 4
+    }]
+  );
+
+  const incTipos = [...new Set(incidencias.map(i => i.tipo_incidencia || 'SIN_TIPO'))];
+
+  const incData = incTipos.map(tipo => {
+    return incidencias.filter(i => (i.tipo_incidencia || 'SIN_TIPO') === tipo).length;
+  });
+
+  makeChart(
+    'chart-incidencias',
+    'bar',
+    incTipos,
+    [{
+      label: 'Incidencias',
+      data: incData,
+      backgroundColor: '#84A98C',
+      borderRadius: 4
+    }]
+  );
+}
+
+/* ================================
+   METRICAS
+================================ */
+
+function updateMetricsCharts() {
+  const rows = [...getMetricas()].reverse();
+
+  const labels = rows.map(r => String(r.id));
+
+  const grouped = groupByNode(rows);
+
+  const buildMetricDataset = (field) => {
+    return Object.entries(grouped).map(([node, nodeRows]) => {
+      const map = {};
+      nodeRows.forEach(r => map[String(r.id)] = num(r[field]));
+
+      return {
+        label: node,
+        data: labels.map(id => map[id] ?? null),
+        borderColor: getColor(node),
+        backgroundColor: getColor(node) + '33',
+        pointRadius: 3,
+        borderWidth: 2,
+        tension: 0.3,
+        spanGaps: true
+      };
+    });
+  };
+
+  makeChart(
+    'chart-temp-media',
+    'line',
+    labels,
+    buildMetricDataset('temperatura_media')
+  );
+
+  makeChart(
+    'chart-suelo-media',
+    'line',
+    labels,
+    buildMetricDataset('humedad_suelo_media')
+  );
+}
+
+/* ================================
+   BOTONES POST
+================================ */
+
+document.getElementById('btn-on').addEventListener('click', async () => {
+  const node = document.getElementById('sel-nodo-ctrl').value;
+
+  const res = await apiPost('/actuacion', {
+    node_id: node,
+    estado: 'ON'
+  });
+
+  document.getElementById('api-actuacion').textContent = JSON.stringify(res, null, 2);
+  notify('Orden ON enviada a ' + node);
+
+  await cargarDatos();
+});
+
+document.getElementById('btn-off').addEventListener('click', async () => {
+  const node = document.getElementById('sel-nodo-ctrl').value;
+
+  const res = await apiPost('/actuacion', {
+    node_id: node,
+    estado: 'OFF'
+  });
+
+  document.getElementById('api-actuacion').textContent = JSON.stringify(res, null, 2);
+  notify('Orden OFF enviada a ' + node);
+
+  await cargarDatos();
+});
+
+document.getElementById('btn-limpiar').addEventListener('click', async () => {
+  const lim = Number(document.getElementById('inp-limite-limpiar').value || 50);
+
+  const res = await apiPost('/limpiar-lote', {
+    limite: lim
+  });
+
+  document.getElementById('api-proc').textContent = JSON.stringify(res, null, 2);
+  notify('Limpieza ejecutada');
+
+  await cargarDatos();
+});
+
+document.getElementById('btn-metricas').addEventListener('click', async () => {
+  const lim = Number(document.getElementById('inp-limite-metricas').value || 50);
+
+  const res = await apiPost('/metricas/calcular', {
+    limite: lim
+  });
+
+  document.getElementById('api-proc').textContent = JSON.stringify(res, null, 2);
+  notify('Métricas calculadas');
+
+  await cargarDatos();
+});
+
+/* ================================
+   REFRESCO GENERAL
+================================ */
+
+function updateTs() {
+  document.getElementById('live-ts').textContent = new Date().toLocaleTimeString('es');
+}
+
+function actualizarTodo() {
+  construirSelectorNodos();
+  updateKPIs();
+  updateEstadoCard();
+  updateEstadosTable();
+  updateDatosTables();
+  updateAlertasTable();
+  updateMetricasTable();
+  updateLineCharts();
+  updateAlertCharts();
+  updateMetricsCharts();
+  updateTs();
+}
+
+async function init() {
+  updateTs();
+  await cargarDatos();
+  setInterval(updateTs, 1000);
+  setInterval(cargarDatos, 5000);
+}
+
+init();
+</script>
+
+</body>
+</html>

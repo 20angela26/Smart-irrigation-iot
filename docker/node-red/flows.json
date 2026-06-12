@@ -1,0 +1,2412 @@
+[
+    {
+        "id": "639adf2aad14446c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "db0dfb7bbddff88e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3ed17db9dc5accc5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "sistemariegointeligenteiot@gmail.com",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8532ecc1d51d2e8e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "sistemariegointeligenteiot@gmail.com",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cf8973c1623f12c4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "sistemariegointeligenteiot@gmail.com",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fd407c03c80b70fc",
+        "type": "mqtt-broker",
+        "name": "IOT",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4ec3056c44cc6a8c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "sistemariegointeligenteiot@gmail.com",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a23cbf4f47fbee8d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "83d6dd7dab65c4eb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "48ce74bedb0d25e0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "maqiatto.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e1919846c9544043",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7c02afdfbeae13d7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f983b02680213c6b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2bee37a05bfa8263",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f5c1cca2826df8ff",
+        "type": "mqtt-broker",
+        "name": "Parcial2_Datos",
+        "broker": "00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1905c9d3107976dd",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2be8a41c94c84c46",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud",
+        "port": 1883,
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ce5b0ce08f970127",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "858d547e3eee15ec",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "mysql",
+        "port": "3306",
+        "db": "iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "5429c8fdddb5af90",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "mysql",
+        "port": "3306",
+        "db": "iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "c9acc01443e07149",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud",
+        "port": "883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "530e2ebd391a580c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7d92ae245eda9404",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4b408a390b2181bc",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "819e2fcee25602dd",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "93b17a7411ab8336",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "4b408a390b2181bc",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "819e2fcee25602dd",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6b6cec9284233145",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "93b17a7411ab8336",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "b5a51fe81c50a89b",
+        "type": "ui-group",
+        "name": "Group 2",
+        "page": "93b17a7411ab8336",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ac80164fb5c452cb",
+        "type": "mqtt in",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "topic": "Parcial2_Datos",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "f5c1cca2826df8ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 180,
+        "wires": [
+            [
+                "79ae5bee12b11d61",
+                "83d0619ce3436f83"
+            ]
+        ]
+    },
+    {
+        "id": "c2ae68b24cc362cd",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Logica ",
+        "func": "if (!msg.payload) {\n    node.warn(\"payload undefined en Logica\");\n    return null;\n}\n\nlet temperatura = msg.payload.temperatura;\nlet humedadSuelo = msg.payload.humedad_suelo;\nlet timestamp = msg.payload.timestamp;\nlet lecturaId = msg.lectura_id;\nlet nodeId = msg.payload.node_id;\n\n// Validar datos\nif (temperatura === undefined || humedadSuelo === undefined || !nodeId) {\n    node.warn(\"faltan temperatura, humedad_suelo o node_id en Logica\");\n    return null;\n}\n\nlet sueloSeco = humedadSuelo > 3000;\nlet sueloNormal = humedadSuelo <= 2500;\nlet temperaturaAlta = temperatura > 40;\nlet riegoNecesario = sueloSeco && temperaturaAlta;\n\nlet msgSueloSeco = null;\nlet msgTempAlta = null;\nlet msgRiego = null;\nlet msgSueloNormal = null;\nlet mensajeBomba = null;\n\nif (sueloSeco) {\n    msgSueloSeco = {\n        payload: {\n            lectura_id: lecturaId,\n            node_id: nodeId,\n            tipo_alerta: \"suelo_seco\",\n            timestamp_alerta: timestamp\n        }\n    };\n}\n\nif (temperaturaAlta) {\n    msgTempAlta = {\n        payload: {\n            lectura_id: lecturaId,\n            node_id: nodeId,\n            tipo_alerta: \"temperatura_alta\",\n            timestamp_alerta: timestamp\n        }\n    };\n}\n\nif (riegoNecesario) {\n    msgRiego = {\n        payload: {\n            lectura_id: lecturaId,\n            node_id: nodeId,\n            tipo_alerta: \"necesidad_riego\",\n            timestamp_alerta: timestamp\n        }\n    };\n}\n\nif (sueloNormal) {\n    msgSueloNormal = {\n        payload: {\n            lectura_id: lecturaId,\n            node_id: nodeId,\n            tipo_alerta: \"suelo_normal\",\n            timestamp_alerta: timestamp\n        }\n    };\n}\n\n// Seleccion dinamica del topico de actuacion\nlet topicActuacion = null;\n\n// El ESP32 real activa la bomba fisica\nif (nodeId === \"ESP32_1\") {\n    topicActuacion = \"Parcial2_Bomba\";\n}\n\n// SIM_1 tambien activa la bomba fisica, si asi lo necesitas para pruebas\nif (nodeId === \"SIM_1\") {\n    topicActuacion = \"Parcial2_Bomba\";\n}\n\n// El simulador Python NO activa la bomba fisica.\n// Este activa solamente la pagina web.\nif (nodeId === \"PYTHON_VIRTUAL_1\") {\n    topicActuacion = \"Parcial2_Pagina\";\n}\n\nif (topicActuacion) {\n    mensajeBomba = {\n        topic: topicActuacion,\n        payload: riegoNecesario ? \"ON\" : \"OFF\",\n        lectura_id: lecturaId,\n        node_id: nodeId,\n        timestamp_alerta: timestamp,\n        humedad_suelo: humedadSuelo\n    };\n} else {\n    node.warn(\"node_id sin topico de actuacion configurado: \" + nodeId);\n}\n\nreturn [msgSueloSeco, msgTempAlta, msgRiego, msgSueloNormal, mensajeBomba];",
+        "outputs": 5,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "7f84bcc841c539b2",
+                "707782c23bc60d8a"
+            ],
+            [
+                "c50587c07534e9cb",
+                "707782c23bc60d8a"
+            ],
+            [
+                "c245a5a61a77e4d6",
+                "707782c23bc60d8a"
+            ],
+            [
+                "2b1dc6a884fc6b68",
+                "707782c23bc60d8a"
+            ],
+            [
+                "8031fa712b93f12d",
+                "9833ca6660a1f919",
+                "3c0855dee7b8d391"
+            ]
+        ]
+    },
+    {
+        "id": "c50587c07534e9cb",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "Alerta Temperatura Alta",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7f84bcc841c539b2",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "Alerta Suelo Seco",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "79ae5bee12b11d61",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 140,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "8031fa712b93f12d",
+        "type": "mqtt out",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ce5b0ce08f970127",
+        "x": 1150,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2b1dc6a884fc6b68",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "Alerta Suelo Normal",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c245a5a61a77e4d6",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "Alerta Necesidad de riego ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "83d0619ce3436f83",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Insertar Datos Brutos ",
+        "func": "let d = msg.payload;\n\n// generar timestamp si no viene\nlet timestamp = d.timestamp;\nif (!timestamp) {\n    timestamp = new Date().toISOString().slice(0, 19).replace(\"T\", \" \");\n}\n\n// leer node_id\nlet nodeId = d.node_id;\nif (!nodeId) {\n    nodeId = \"SIN_ID\";\n}\n\nlet temperatura = (d.temperatura !== undefined) ? d.temperatura : \"NULL\";\nlet humedadAire = (d.humedad_aire !== undefined) ? d.humedad_aire : \"NULL\";\nlet humedadSuelo = (d.humedad_suelo !== undefined) ? d.humedad_suelo : \"NULL\";\n\n// guardar copia del dato original\nmsg.datosOriginales = {\n    node_id: nodeId,\n    temperatura: d.temperatura,\n    humedad_aire: d.humedad_aire,\n    humedad_suelo: d.humedad_suelo,\n    timestamp: timestamp\n};\n\nmsg.topic = `\nINSERT INTO datos_brutos (temperatura, humedad_aire, humedad_suelo, timestamp_sensor, node_id)\nVALUES (${temperatura}, ${humedadAire}, ${humedadSuelo}, '${timestamp}', '${nodeId}')\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 180,
+        "wires": [
+            [
+                "97adda9fcf92884f"
+            ]
+        ]
+    },
+    {
+        "id": "78996f08c29e9eee",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Recuperar Lectura_id",
+        "func": "let insertId = msg.payload.insertId;\nlet datos = msg.datosOriginales;\n\n// restaurar el payload para que la lógica lo use\nmsg.payload = datos;\n\n// agregar el id de la lectura guardada\nmsg.lectura_id = insertId;\n\n// opcional: dejar también node_id a nivel superior\nmsg.node_id = datos.node_id;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 180,
+        "wires": [
+            [
+                "ee19e17561367218",
+                "c2ae68b24cc362cd",
+                "ea9328bd7af97f30"
+            ]
+        ]
+    },
+    {
+        "id": "97adda9fcf92884f",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "78996f08c29e9eee"
+            ]
+        ]
+    },
+    {
+        "id": "707782c23bc60d8a",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Insertar Alertas ",
+        "func": "msg.topic = `\nINSERT INTO alertas (lectura_id, tipo_alerta, timestamp_alerta)\nVALUES (${msg.payload.lectura_id}, '${msg.payload.tipo_alerta}', '${msg.payload.timestamp_alerta}')\n`;\nmsg.payload = msg.topic;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 180,
+        "wires": [
+            [
+                "9e379b29f2c45b15"
+            ]
+        ]
+    },
+    {
+        "id": "9833ca6660a1f919",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Insertar Bomba ",
+        "func": "let estado = msg.payload;\nlet lecturaId = msg.lectura_id;\nlet timestamp = msg.timestamp_alerta || new Date().toISOString().slice(0, 19).replace(\"T\", \" \");\nlet humedadFinal = msg.humedad_suelo || 0;\n\nif (estado === \"ON\") {\n    msg.topic = `\n    INSERT INTO activacion_bomba (lectura_id, fecha_inicio)\n    VALUES (${lecturaId}, '${timestamp}')\n    `;\n    return msg;\n}\n\nif (estado === \"OFF\") {\n    msg.topic = `\n    UPDATE activacion_bomba\n    SET \n        fecha_fin = '${timestamp}',\n        duracion_segundos = TIMESTAMPDIFF(SECOND, fecha_inicio, '${timestamp}'),\n        humedad_final = ${humedadFinal},\n        motivo_apagado = 'humedad alcanzada o tiempo maximo'\n    WHERE fecha_fin IS NULL\n    ORDER BY id DESC\n    LIMIT 1\n    `;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 240,
+        "wires": [
+            [
+                "f66d82e3f1d42726"
+            ]
+        ]
+    },
+    {
+        "id": "ee19e17561367218",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9e379b29f2c45b15",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "iot_db_alertas",
+        "x": 1640,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f66d82e3f1d42726",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "5429c8fdddb5af90",
+        "name": "iot_db_bomba",
+        "x": 1640,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "895d2bce061bc022",
+        "type": "inject",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "aa092423840cb5c7"
+            ]
+        ]
+    },
+    {
+        "id": "aa092423840cb5c7",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Simulacion de datos ",
+        "func": "let temperatura = +(Math.random() * (50 - 46) + 46).toFixed(2);   // siempre > 45\nlet humedadAire = +(Math.random() * (80 - 40) + 40).toFixed(2);\nlet humedadSuelo = Math.floor(Math.random() * (3600 - 3101) + 3101); // siempre > 3000\nlet timestamp = new Date().toISOString().slice(0, 19).replace(\"T\", \" \");\n\nmsg.payload = JSON.stringify({\n    node_id: \"SIM_1\",\n    temperatura: temperatura,\n    humedad_aire: humedadAire,\n    humedad_suelo: humedadSuelo,\n    timestamp: timestamp\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "476d0658f34d9231"
+            ]
+        ]
+    },
+    {
+        "id": "476d0658f34d9231",
+        "type": "json",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "83d0619ce3436f83"
+            ]
+        ]
+    },
+    {
+        "id": "3c0855dee7b8d391",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ea9328bd7af97f30",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "contar datos pendientes",
+        "func": "msg.topic = `\nSELECT COUNT(*) AS pendientes\nFROM datos_brutos db\nLEFT JOIN datos_limpios dl\n    ON db.id = dl.lectura_bruta_id\nWHERE dl.lectura_bruta_id IS NULL;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 600,
+        "wires": [
+            [
+                "643cffd44ed7d853"
+            ]
+        ]
+    },
+    {
+        "id": "643cffd44ed7d853",
+        "type": "switch",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "property": "msg.payload[0].pendientes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "70",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 600,
+        "wires": [
+            [
+                "762892940dd6bc6c"
+            ]
+        ]
+    },
+    {
+        "id": "762892940dd6bc6c",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "insertar incidencias lote",
+        "func": "msg.topic = `\nINSERT INTO incidencias (\n    lectura_bruta_id,\n    node_id,\n    campo_afectado,\n    tipo_incidencia,\n    valor_original,\n    valor_corregido,\n    metodo_aplicado,\n    descripcion\n)\nSELECT\n    db.id,\n    db.node_id,\n\n    CONCAT_WS(',',\n        CASE\n            WHEN db.temperatura IS NULL OR db.temperatura < 0 OR db.temperatura > 60\n            THEN 'temperatura'\n        END,\n        CASE\n            WHEN db.humedad_aire IS NULL OR db.humedad_aire < 0 OR db.humedad_aire > 100\n            THEN 'humedad_aire'\n        END,\n        CASE\n            WHEN db.humedad_suelo IS NULL OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n            THEN 'humedad_suelo'\n        END,\n        CASE\n            WHEN EXISTS (\n                SELECT 1\n                FROM datos_brutos db2\n                WHERE db2.id <> db.id\n                  AND db2.node_id = db.node_id\n                  AND db2.temperatura <=> db.temperatura\n                  AND db2.humedad_aire <=> db.humedad_aire\n                  AND db2.humedad_suelo <=> db.humedad_suelo\n                  AND db2.timestamp_sensor = db.timestamp_sensor\n            )\n            THEN 'registro_completo'\n        END\n    ) AS campo_afectado,\n\n    CONCAT_WS(',',\n        CASE\n            WHEN db.temperatura IS NULL\n              OR db.humedad_aire IS NULL\n              OR db.humedad_suelo IS NULL\n            THEN 'valor_nulo'\n        END,\n        CASE\n            WHEN db.temperatura < 0 OR db.temperatura > 60\n              OR db.humedad_aire < 0 OR db.humedad_aire > 100\n              OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n            THEN 'valor_fuera_rango'\n        END,\n        CASE\n            WHEN EXISTS (\n                SELECT 1\n                FROM datos_brutos db2\n                WHERE db2.id <> db.id\n                  AND db2.node_id = db.node_id\n                  AND db2.temperatura <=> db.temperatura\n                  AND db2.humedad_aire <=> db.humedad_aire\n                  AND db2.humedad_suelo <=> db.humedad_suelo\n                  AND db2.timestamp_sensor = db.timestamp_sensor\n            )\n            THEN 'dato_duplicado'\n        END\n    ) AS tipo_incidencia,\n\n    JSON_OBJECT(\n        'temperatura', db.temperatura,\n        'humedad_aire', db.humedad_aire,\n        'humedad_suelo', db.humedad_suelo\n    ) AS valor_original,\n\n    JSON_OBJECT(\n        'temperatura',\n            CASE\n                WHEN db.temperatura IS NULL OR db.temperatura < 0 OR db.temperatura > 60\n                THEN 25\n                ELSE db.temperatura\n            END,\n        'humedad_aire',\n            CASE\n                WHEN db.humedad_aire IS NULL OR db.humedad_aire < 0 OR db.humedad_aire > 100\n                THEN 60\n                ELSE db.humedad_aire\n            END,\n        'humedad_suelo',\n            CASE\n                WHEN db.humedad_suelo IS NULL OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n                THEN 2800\n                ELSE db.humedad_suelo\n            END\n    ) AS valor_corregido,\n\n    'validacion_rango_y_valores_por_defecto' AS metodo_aplicado,\n\n    'Incidencia detectada durante limpieza por lote desde Node-RED' AS descripcion\n\nFROM datos_brutos db\nLEFT JOIN datos_limpios dl\n    ON db.id = dl.lectura_bruta_id\nWHERE dl.lectura_bruta_id IS NULL\n  AND (\n    db.temperatura IS NULL\n    OR db.temperatura < 0\n    OR db.temperatura > 60\n    OR db.humedad_aire IS NULL\n    OR db.humedad_aire < 0\n    OR db.humedad_aire > 100\n    OR db.humedad_suelo IS NULL\n    OR db.humedad_suelo < 0\n    OR db.humedad_suelo > 4095\n    OR EXISTS (\n        SELECT 1\n        FROM datos_brutos db2\n        WHERE db2.id <> db.id\n          AND db2.node_id = db.node_id\n          AND db2.temperatura <=> db.temperatura\n          AND db2.humedad_aire <=> db.humedad_aire\n          AND db2.humedad_suelo <=> db.humedad_suelo\n          AND db2.timestamp_sensor = db.timestamp_sensor\n    )\n  )\nORDER BY db.id ASC\nLIMIT 70;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 600,
+        "wires": [
+            [
+                "fd8110be132de233"
+            ]
+        ]
+    },
+    {
+        "id": "fd8110be132de233",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 830,
+        "y": 600,
+        "wires": [
+            [
+                "4d194e7285530adb"
+            ]
+        ]
+    },
+    {
+        "id": "4d194e7285530adb",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "insertar datos limpios ",
+        "func": "msg.topic = `\nINSERT IGNORE INTO datos_limpios (\n    lectura_bruta_id,\n    incidencia_id,\n    node_id,\n    temperatura,\n    humedad_aire,\n    humedad_suelo,\n    timestamp_sensor\n)\nSELECT\n    db.id,\n\n    (\n        SELECT i.id\n        FROM incidencias i\n        WHERE i.lectura_bruta_id = db.id\n        ORDER BY i.id DESC\n        LIMIT 1\n    ) AS incidencia_id,\n\n    db.node_id,\n\n    CASE\n        WHEN db.temperatura IS NULL OR db.temperatura < 0 OR db.temperatura > 60\n        THEN 25\n        ELSE db.temperatura\n    END AS temperatura,\n\n    CASE\n        WHEN db.humedad_aire IS NULL OR db.humedad_aire < 0 OR db.humedad_aire > 100\n        THEN 60\n        ELSE db.humedad_aire\n    END AS humedad_aire,\n\n    CASE\n        WHEN db.humedad_suelo IS NULL OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n        THEN 2800\n        ELSE db.humedad_suelo\n    END AS humedad_suelo,\n\n    db.timestamp_sensor\n\nFROM datos_brutos db\nLEFT JOIN datos_limpios dl\n    ON db.id = dl.lectura_bruta_id\nWHERE dl.lectura_bruta_id IS NULL\nORDER BY db.id ASC\nLIMIT 70;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 600,
+        "wires": [
+            [
+                "378bbb314c0cd7d1"
+            ]
+        ]
+    },
+    {
+        "id": "378bbb314c0cd7d1",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 1230,
+        "y": 600,
+        "wires": [
+            [
+                "d57b2db4d6296d9e"
+            ]
+        ]
+    },
+    {
+        "id": "d57b2db4d6296d9e",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Consultar lotes para metricas",
+        "func": "msg.topic = `\nSELECT\n    dl.lectura_bruta_id,\n    dl.incidencia_id,\n    dl.node_id,\n    dl.temperatura,\n    dl.humedad_aire,\n    dl.humedad_suelo,\n    DATE_FORMAT(dl.timestamp_sensor, '%Y-%m-%d %H:%i:%s') AS timestamp_sensor,\n    i.tipo_incidencia,\n    i.metodo_aplicado\nFROM (\n    SELECT *\n    FROM datos_limpios\n    ORDER BY lectura_bruta_id DESC\n    LIMIT 70\n) dl\nLEFT JOIN incidencias i\n    ON dl.incidencia_id = i.id\nORDER BY dl.lectura_bruta_id ASC;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 700,
+        "wires": [
+            [
+                "1fa6a6b4f3a380e4"
+            ]
+        ]
+    },
+    {
+        "id": "1fa6a6b4f3a380e4",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "5429c8fdddb5af90",
+        "name": "",
+        "x": 490,
+        "y": 700,
+        "wires": [
+            [
+                "7c9a180206d5d620"
+            ]
+        ]
+    },
+    {
+        "id": "7c9a180206d5d620",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Metricas estadisticas",
+        "func": "let filas = msg.payload;\n\nif (!Array.isArray(filas) || filas.length === 0) {\n    node.warn(\"No hay datos limpios para calcular metricas\");\n    return null;\n}\n\n// ===============================\n// FUNCIONES AUXILIARES\n// ===============================\n\nfunction limpiarNumero(valor) {\n    if (valor === null || valor === undefined || valor === \"\") {\n        return null;\n    }\n\n    let n = Number(valor);\n\n    if (isNaN(n)) {\n        return null;\n    }\n\n    return n;\n}\n\nfunction promedio(arr) {\n    if (arr.length === 0) return null;\n    return arr.reduce((a, b) => a + b, 0) / arr.length;\n}\n\nfunction mediana(arr) {\n    if (arr.length === 0) return null;\n\n    let datos = [...arr].sort((a, b) => a - b);\n    let mitad = Math.floor(datos.length / 2);\n\n    if (datos.length % 2 === 0) {\n        return (datos[mitad - 1] + datos[mitad]) / 2;\n    }\n\n    return datos[mitad];\n}\n\nfunction moda(arr) {\n    if (arr.length === 0) return null;\n\n    let frecuencias = {};\n    let maxFrecuencia = 0;\n    let modaValor = arr[0];\n\n    for (let valor of arr) {\n        let clave = String(valor);\n        frecuencias[clave] = (frecuencias[clave] || 0) + 1;\n\n        if (frecuencias[clave] > maxFrecuencia) {\n            maxFrecuencia = frecuencias[clave];\n            modaValor = valor;\n        }\n    }\n\n    return modaValor;\n}\n\nfunction minimo(arr) {\n    if (arr.length === 0) return null;\n    return Math.min(...arr);\n}\n\nfunction maximo(arr) {\n    if (arr.length === 0) return null;\n    return Math.max(...arr);\n}\n\nfunction varianza(arr) {\n    if (arr.length === 0) return null;\n\n    let media = promedio(arr);\n    let suma = arr.reduce((acc, valor) => {\n        return acc + Math.pow(valor - media, 2);\n    }, 0);\n\n    return suma / arr.length;\n}\n\nfunction desviacionEstandar(arr) {\n    let v = varianza(arr);\n    if (v === null) return null;\n    return Math.sqrt(v);\n}\n\nfunction calcularMetricas(arr) {\n    let min = minimo(arr);\n    let max = maximo(arr);\n\n    return {\n        media: promedio(arr),\n        mediana: mediana(arr),\n        moda: moda(arr),\n        minima: min,\n        maxima: max,\n        rango: min !== null && max !== null ? max - min : null,\n        desviacion: desviacionEstandar(arr),\n        varianza: varianza(arr)\n    };\n}\n\nfunction sqlNumber(valor) {\n    if (valor === null || valor === undefined || isNaN(valor)) {\n        return \"NULL\";\n    }\n\n    return Number(valor).toFixed(4);\n}\n\nfunction sqlString(valor) {\n    if (valor === null || valor === undefined) {\n        return \"\";\n    }\n\n    return String(valor).replace(/'/g, \"''\");\n}\n\nfunction formatearFechaMySQL(valor) {\n    if (!valor) {\n        return null;\n    }\n\n    // Si MySQL ya manda formato string tipo \"2026-05-27 18:00:00\"\n    if (typeof valor === \"string\") {\n        return valor.replace(\"T\", \" \").slice(0, 19);\n    }\n\n    // Si MySQL manda objeto Date\n    let fecha = new Date(valor);\n\n    if (isNaN(fecha.getTime())) {\n        return null;\n    }\n\n    return fecha.toISOString().slice(0, 19).replace(\"T\", \" \");\n}\n\n// ===============================\n// AGRUPAR POR NODE_ID\n// ===============================\n\nlet grupos = {};\n\nfor (let fila of filas) {\n    let nodeId = fila.node_id || \"SIN_ID\";\n\n    if (!grupos[nodeId]) {\n        grupos[nodeId] = [];\n    }\n\n    grupos[nodeId].push(fila);\n}\n\n// ===============================\n// CALCULAR METRICAS\n// ===============================\n\nlet inserts = [];\n\nfor (let nodeId in grupos) {\n    let datos = grupos[nodeId];\n\n    let temperaturas = datos\n        .map(f => limpiarNumero(f.temperatura))\n        .filter(v => v !== null);\n\n    let humedadesAire = datos\n        .map(f => limpiarNumero(f.humedad_aire))\n        .filter(v => v !== null);\n\n    let humedadesSuelo = datos\n        .map(f => limpiarNumero(f.humedad_suelo))\n        .filter(v => v !== null);\n\n    if (\n        temperaturas.length === 0 &&\n        humedadesAire.length === 0 &&\n        humedadesSuelo.length === 0\n    ) {\n        continue;\n    }\n\n    let metTemp = calcularMetricas(temperaturas);\n    let metHumAire = calcularMetricas(humedadesAire);\n    let metHumSuelo = calcularMetricas(humedadesSuelo);\n\n    let idsValidos = datos\n        .map(f => Number(f.lectura_bruta_id))\n        .filter(v => !isNaN(v));\n\n    if (idsValidos.length === 0) {\n        node.warn(\"No hay lectura_bruta_id valido para node_id: \" + nodeId);\n        continue;\n    }\n\n    let lecturaBrutaId = Math.max(...idsValidos);\n\n    let fechasValidas = datos\n        .map(f => formatearFechaMySQL(f.timestamp_sensor))\n        .filter(f => f !== null);\n\n    if (fechasValidas.length === 0) {\n        node.warn(\"No hay fechas validas para node_id: \" + nodeId);\n        continue;\n    }\n\n    fechasValidas.sort();\n\n    let fechaInicio = fechasValidas[0];\n    let fechaFin = fechasValidas[fechasValidas.length - 1];\n\n    let totalRegistros = datos.length;\n\n    let cantidadIncidencias = datos.filter(f => {\n        return f.incidencia_id !== null && f.incidencia_id !== undefined;\n    }).length;\n\n    let cantidadDuplicados = datos.filter(f => {\n        return f.tipo_incidencia &&\n            String(f.tipo_incidencia).includes(\"duplicado\");\n    }).length;\n\n    let cantidadImputados = datos.filter(f => {\n        return f.metodo_aplicado &&\n            (\n                String(f.metodo_aplicado).includes(\"media_movil\") ||\n                String(f.metodo_aplicado).includes(\"valor_por_defecto\") ||\n                String(f.metodo_aplicado).includes(\"validacion_rango\")\n            );\n    }).length;\n\n    let cantidadAnomalias = datos.filter(f => {\n        return f.tipo_incidencia &&\n            (\n                String(f.tipo_incidencia).includes(\"fuera_rango\") ||\n                String(f.tipo_incidencia).includes(\"valor_fuera_rango\")\n            );\n    }).length;\n\n    inserts.push(`(\n        ${lecturaBrutaId},\n        '${sqlString(nodeId)}',\n\n        '${fechaInicio}',\n        '${fechaFin}',\n        ${totalRegistros},\n\n        ${sqlNumber(metTemp.media)},\n        ${sqlNumber(metTemp.mediana)},\n        ${sqlNumber(metTemp.moda)},\n        ${sqlNumber(metTemp.minima)},\n        ${sqlNumber(metTemp.maxima)},\n        ${sqlNumber(metTemp.rango)},\n        ${sqlNumber(metTemp.desviacion)},\n        ${sqlNumber(metTemp.varianza)},\n\n        ${sqlNumber(metHumAire.media)},\n        ${sqlNumber(metHumAire.mediana)},\n        ${sqlNumber(metHumAire.moda)},\n        ${sqlNumber(metHumAire.minima)},\n        ${sqlNumber(metHumAire.maxima)},\n        ${sqlNumber(metHumAire.rango)},\n        ${sqlNumber(metHumAire.desviacion)},\n        ${sqlNumber(metHumAire.varianza)},\n\n        ${sqlNumber(metHumSuelo.media)},\n        ${sqlNumber(metHumSuelo.mediana)},\n        ${sqlNumber(metHumSuelo.moda)},\n        ${sqlNumber(metHumSuelo.minima)},\n        ${sqlNumber(metHumSuelo.maxima)},\n        ${sqlNumber(metHumSuelo.rango)},\n        ${sqlNumber(metHumSuelo.desviacion)},\n        ${sqlNumber(metHumSuelo.varianza)},\n\n        ${cantidadIncidencias},\n        ${cantidadDuplicados},\n        ${cantidadImputados},\n        ${cantidadAnomalias}\n    )`);\n}\n\nif (inserts.length === 0) {\n    node.warn(\"No se generaron metricas\");\n    return null;\n}\n\n// ===============================\n// INSERTAR EN metricas_estadisticas\n// ===============================\n\nmsg.topic = `\nINSERT INTO metricas_estadisticas (\n    lectura_bruta_id,\n    node_id,\n\n    fecha_inicio,\n    fecha_fin,\n    total_registros,\n\n    temperatura_media,\n    temperatura_mediana,\n    temperatura_moda,\n    temperatura_minima,\n    temperatura_maxima,\n    temperatura_rango,\n    temperatura_desviacion_estandar,\n    temperatura_varianza,\n\n    humedad_aire_media,\n    humedad_aire_mediana,\n    humedad_aire_moda,\n    humedad_aire_minima,\n    humedad_aire_maxima,\n    humedad_aire_rango,\n    humedad_aire_desviacion_estandar,\n    humedad_aire_varianza,\n\n    humedad_suelo_media,\n    humedad_suelo_mediana,\n    humedad_suelo_moda,\n    humedad_suelo_minima,\n    humedad_suelo_maxima,\n    humedad_suelo_rango,\n    humedad_suelo_desviacion_estandar,\n    humedad_suelo_varianza,\n\n    cantidad_incidencias,\n    cantidad_duplicados,\n    cantidad_imputados,\n    cantidad_anomalias\n)\nVALUES\n${inserts.join(\",\")};\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 700,
+        "wires": [
+            [
+                "93a69153b1d9078a"
+            ]
+        ]
+    },
+    {
+        "id": "93a69153b1d9078a",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "5429c8fdddb5af90",
+        "name": "",
+        "x": 930,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5338a5d1528aef17",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Get datos brutos",
+        "url": "/api/datos-brutos",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 880,
+        "wires": [
+            [
+                "9f6aab884c457716"
+            ]
+        ]
+    },
+    {
+        "id": "9f6aab884c457716",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL datos brutos",
+        "func": "let limite = msg.req.query.limit || 50;\nlet nodeId = msg.req.query.node_id;\n\nlimite = Number(limite);\n\nif (isNaN(limite) || limite <= 0) {\n    limite = 50;\n}\n\nif (limite > 500) {\n    limite = 500;\n}\n\nlet filtroNode = \"\";\n\nif (nodeId) {\n    nodeId = String(nodeId).replace(/'/g, \"''\");\n    filtroNode = `WHERE node_id = '${nodeId}'`;\n}\n\nmsg.topic = `\nSELECT\n    id,\n    node_id,\n    temperatura,\n    humedad_aire,\n    humedad_suelo,\n    DATE_FORMAT(timestamp_sensor, '%Y-%m-%d %H:%i:%s') AS timestamp_sensor,\n    DATE_FORMAT(fecha_registro, '%Y-%m-%d %H:%i:%s') AS fecha_registro\nFROM datos_brutos\n${filtroNode}\nORDER BY id DESC\nLIMIT ${limite};\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 880,
+        "wires": [
+            [
+                "b7d4c5c431d6fb60"
+            ]
+        ]
+    },
+    {
+        "id": "b7d4c5c431d6fb60",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 570,
+        "y": 880,
+        "wires": [
+            [
+                "94a547d14f611c73"
+            ]
+        ]
+    },
+    {
+        "id": "94a547d14f611c73",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta datos brutos ",
+        "func": "msg.payload = {\n    ok: true,\n    tabla: \"datos_brutos\",\n    total: msg.payload.length,\n    datos: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 880,
+        "wires": [
+            [
+                "2c8a48c490cf208a"
+            ]
+        ]
+    },
+    {
+        "id": "2c8a48c490cf208a",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "decdb8d6da2ccefb",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Get datos limpios",
+        "url": "/api/datos-limpios",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 920,
+        "wires": [
+            [
+                "938001951f81c96a"
+            ]
+        ]
+    },
+    {
+        "id": "938001951f81c96a",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL datos limpios",
+        "func": "let limite = msg.req.query.limit || 50;\nlet nodeId = msg.req.query.node_id;\n\nlimite = Number(limite);\n\nif (isNaN(limite) || limite <= 0) {\n    limite = 50;\n}\n\nif (limite > 500) {\n    limite = 500;\n}\n\nlet filtroNode = \"\";\n\nif (nodeId) {\n    nodeId = String(nodeId).replace(/'/g, \"''\");\n    filtroNode = `WHERE dl.node_id = '${nodeId}'`;\n}\n\nmsg.topic = `\nSELECT\n    dl.lectura_bruta_id,\n    dl.incidencia_id,\n    dl.node_id,\n    dl.temperatura,\n    dl.humedad_aire,\n    dl.humedad_suelo,\n    DATE_FORMAT(dl.timestamp_sensor, '%Y-%m-%d %H:%i:%s') AS timestamp_sensor,\n    DATE_FORMAT(dl.fecha_limpieza, '%Y-%m-%d %H:%i:%s') AS fecha_limpieza\nFROM datos_limpios dl\n${filtroNode}\nORDER BY dl.lectura_bruta_id DESC\nLIMIT ${limite};\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 920,
+        "wires": [
+            [
+                "02aca7ec4b627cb3"
+            ]
+        ]
+    },
+    {
+        "id": "02aca7ec4b627cb3",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 570,
+        "y": 920,
+        "wires": [
+            [
+                "74d19d4ed4a4f0a7"
+            ]
+        ]
+    },
+    {
+        "id": "d02a16805dfca2b3",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "74d19d4ed4a4f0a7",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta datos limpios",
+        "func": "msg.payload = {\n    ok: true,\n    tabla: \"datos_limpios\",\n    total: msg.payload.length,\n    datos: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 920,
+        "wires": [
+            [
+                "d02a16805dfca2b3"
+            ]
+        ]
+    },
+    {
+        "id": "fe858fccd3bbf190",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL incidencias ",
+        "func": "let limite = msg.req.query.limit || 50;\nlet nodeId = msg.req.query.node_id;\n\nlimite = Number(limite);\n\nif (isNaN(limite) || limite <= 0) {\n    limite = 50;\n}\n\nif (limite > 500) {\n    limite = 500;\n}\n\nlet filtroNode = \"\";\n\nif (nodeId) {\n    nodeId = String(nodeId).replace(/'/g, \"''\");\n    filtroNode = `WHERE i.node_id = '${nodeId}'`;\n}\n\nmsg.topic = `\nSELECT\n    i.id,\n    i.lectura_bruta_id,\n    i.node_id,\n    i.campo_afectado,\n    i.tipo_incidencia,\n    i.valor_original,\n    i.valor_corregido,\n    i.metodo_aplicado,\n    i.descripcion,\n    DATE_FORMAT(i.fecha_incidencia, '%Y-%m-%d %H:%i:%s') AS fecha_incidencia\nFROM incidencias i\n${filtroNode}\nORDER BY i.id DESC\nLIMIT ${limite};\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 960,
+        "wires": [
+            [
+                "59766f25658558df"
+            ]
+        ]
+    },
+    {
+        "id": "c4f9efaeaddc0569",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta incidencias",
+        "func": "msg.payload = {\n    ok: true,\n    tabla: \"incidencias\",\n    total: msg.payload.length,\n    datos: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 960,
+        "wires": [
+            [
+                "37cadc996b5fd69b"
+            ]
+        ]
+    },
+    {
+        "id": "5a0eec9c32872bca",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Get incidencias",
+        "url": "/api/incidencias",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 960,
+        "wires": [
+            [
+                "fe858fccd3bbf190"
+            ]
+        ]
+    },
+    {
+        "id": "37cadc996b5fd69b",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "59766f25658558df",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 570,
+        "y": 960,
+        "wires": [
+            [
+                "c4f9efaeaddc0569"
+            ]
+        ]
+    },
+    {
+        "id": "ef15998f9b13b414",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Get alertas",
+        "url": "/api/alertas",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1000,
+        "wires": [
+            [
+                "9836060c0f4024eb"
+            ]
+        ]
+    },
+    {
+        "id": "87d6dcad185640cb",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "9836060c0f4024eb",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL alertas",
+        "func": "let limite = msg.req.query.limit || 50;\nlet nodeId = msg.req.query.node_id;\nlet tipoAlerta = msg.req.query.tipo_alerta;\n\nlimite = Number(limite);\n\nif (isNaN(limite) || limite <= 0) {\n    limite = 50;\n}\n\nif (limite > 500) {\n    limite = 500;\n}\n\nlet filtros = [];\n\nif (nodeId) {\n    nodeId = String(nodeId).replace(/'/g, \"''\");\n    filtros.push(`db.node_id = '${nodeId}'`);\n}\n\nif (tipoAlerta) {\n    tipoAlerta = String(tipoAlerta).replace(/'/g, \"''\");\n    filtros.push(`a.tipo_alerta = '${tipoAlerta}'`);\n}\n\nlet where = filtros.length > 0 ? `WHERE ${filtros.join(\" AND \")}` : \"\";\n\nmsg.topic = `\nSELECT\n    a.id,\n    a.lectura_id,\n    db.node_id,\n    a.tipo_alerta,\n    DATE_FORMAT(a.timestamp_alerta, '%Y-%m-%d %H:%i:%s') AS timestamp_alerta\nFROM alertas a\nINNER JOIN datos_brutos db\n    ON a.lectura_id = db.id\n${where}\nORDER BY a.id DESC\nLIMIT ${limite};\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1000,
+        "wires": [
+            [
+                "e307c586b86f2c86"
+            ]
+        ]
+    },
+    {
+        "id": "2838f619c88695e2",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta alertas",
+        "func": "msg.payload = {\n    ok: true,\n    tabla: \"alertas\",\n    total: msg.payload.length,\n    datos: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1000,
+        "wires": [
+            [
+                "87d6dcad185640cb"
+            ]
+        ]
+    },
+    {
+        "id": "e307c586b86f2c86",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "5429c8fdddb5af90",
+        "name": "",
+        "x": 570,
+        "y": 1000,
+        "wires": [
+            [
+                "2838f619c88695e2"
+            ]
+        ]
+    },
+    {
+        "id": "b46864378aa00425",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Get metricas",
+        "url": "/api/metricas",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 1040,
+        "wires": [
+            [
+                "0176a7f9262a8e2e"
+            ]
+        ]
+    },
+    {
+        "id": "0600794e583983a4",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "0176a7f9262a8e2e",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL metricas",
+        "func": "let limite = msg.req.query.limit || 20;\nlet nodeId = msg.req.query.node_id;\n\nlimite = Number(limite);\n\nif (isNaN(limite) || limite <= 0) {\n    limite = 20;\n}\n\nif (limite > 200) {\n    limite = 200;\n}\n\nlet filtroNode = \"\";\n\nif (nodeId) {\n    nodeId = String(nodeId).replace(/'/g, \"''\");\n    filtroNode = `WHERE node_id = '${nodeId}'`;\n}\n\nmsg.topic = `\nSELECT\n    id,\n    lectura_bruta_id,\n    node_id,\n    DATE_FORMAT(fecha_inicio, '%Y-%m-%d %H:%i:%s') AS fecha_inicio,\n    DATE_FORMAT(fecha_fin, '%Y-%m-%d %H:%i:%s') AS fecha_fin,\n    total_registros,\n\n    temperatura_media,\n    temperatura_mediana,\n    temperatura_moda,\n    temperatura_minima,\n    temperatura_maxima,\n    temperatura_rango,\n    temperatura_desviacion_estandar,\n    temperatura_varianza,\n\n    humedad_aire_media,\n    humedad_aire_mediana,\n    humedad_aire_moda,\n    humedad_aire_minima,\n    humedad_aire_maxima,\n    humedad_aire_rango,\n    humedad_aire_desviacion_estandar,\n    humedad_aire_varianza,\n\n    humedad_suelo_media,\n    humedad_suelo_mediana,\n    humedad_suelo_moda,\n    humedad_suelo_minima,\n    humedad_suelo_maxima,\n    humedad_suelo_rango,\n    humedad_suelo_desviacion_estandar,\n    humedad_suelo_varianza,\n\n    cantidad_incidencias,\n    cantidad_duplicados,\n    cantidad_imputados,\n    cantidad_anomalias,\n\n    DATE_FORMAT(fecha_calculo, '%Y-%m-%d %H:%i:%s') AS fecha_calculo\nFROM metricas_estadisticas\n${filtroNode}\nORDER BY id DESC\nLIMIT ${limite};\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1040,
+        "wires": [
+            [
+                "2063dcdc27b32890"
+            ]
+        ]
+    },
+    {
+        "id": "f2fb18cfa73b6448",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta metricas",
+        "func": "msg.payload = {\n    ok: true,\n    tabla: \"metricas_estadisticas\",\n    total: msg.payload.length,\n    datos: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1040,
+        "wires": [
+            [
+                "0600794e583983a4"
+            ]
+        ]
+    },
+    {
+        "id": "2063dcdc27b32890",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 570,
+        "y": 1040,
+        "wires": [
+            [
+                "f2fb18cfa73b6448"
+            ]
+        ]
+    },
+    {
+        "id": "b79aa2dc8cbc8ba3",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Get estado-actual",
+        "url": "/api/estado-actual",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 1080,
+        "wires": [
+            [
+                "83f487ae65e914b8"
+            ]
+        ]
+    },
+    {
+        "id": "bfe484737c3bba11",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "83f487ae65e914b8",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL estado actual",
+        "func": "let nodeId = msg.req.query.node_id || \"PYTHON_VIRTUAL_1\";\nnodeId = String(nodeId).replace(/'/g, \"''\");\n\nmsg.topic = `\nSELECT\n    db.id,\n    db.node_id,\n    db.temperatura,\n    db.humedad_aire,\n    db.humedad_suelo,\n    DATE_FORMAT(db.timestamp_sensor, '%Y-%m-%d %H:%i:%s') AS timestamp_sensor,\n\n    CASE\n        WHEN db.humedad_suelo > 3000 AND db.temperatura > 30\n        THEN 'ON'\n        ELSE 'OFF'\n    END AS estado_riego,\n\n    CASE\n        WHEN db.humedad_suelo > 3000 AND db.temperatura > 30\n        THEN 'Necesita riego'\n        WHEN db.humedad_suelo > 3000\n        THEN 'Suelo seco'\n        WHEN db.humedad_suelo <= 2500\n        THEN 'Suelo normal'\n        ELSE 'Estado intermedio'\n    END AS estado_sistema\n\nFROM datos_brutos db\nWHERE db.node_id = '${nodeId}'\nORDER BY db.id DESC\nLIMIT 1;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1080,
+        "wires": [
+            [
+                "38c18e18b66aa91a"
+            ]
+        ]
+    },
+    {
+        "id": "38c18e18b66aa91a",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 570,
+        "y": 1080,
+        "wires": [
+            [
+                "ea91ba532b26b647"
+            ]
+        ]
+    },
+    {
+        "id": "ea91ba532b26b647",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta estado actual",
+        "func": "if (!msg.payload || msg.payload.length === 0) {\n    msg.payload = {\n        ok: false,\n        mensaje: \"No hay datos para este nodo\"\n    };\n    return msg;\n}\n\nmsg.payload = {\n    ok: true,\n    datos: msg.payload[0]\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1080,
+        "wires": [
+            [
+                "bfe484737c3bba11"
+            ]
+        ]
+    },
+    {
+        "id": "f58285b2602e6035",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Post datos brutos",
+        "url": "/api/datos-brutos",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1220,
+        "wires": [
+            [
+                "b1df2062e756b3e8"
+            ]
+        ]
+    },
+    {
+        "id": "f708551897bafad3",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL insertar datos brutos ",
+        "func": "let d = msg.payload;\n\nfunction sqlString(value) {\n    if (value === undefined || value === null) {\n        return \"\";\n    }\n    return String(value).replace(/'/g, \"''\");\n}\n\nfunction sqlNumber(value) {\n    if (value === undefined || value === null || value === \"\") {\n        return \"NULL\";\n    }\n\n    let n = Number(value);\n\n    if (isNaN(n)) {\n        return \"NULL\";\n    }\n\n    return n;\n}\n\nlet nodeId = sqlString(d.node_id || \"API_MANUAL\");\nlet temperatura = sqlNumber(d.temperatura);\nlet humedadAire = sqlNumber(d.humedad_aire);\nlet humedadSuelo = sqlNumber(d.humedad_suelo);\n\nlet timestamp = d.timestamp_sensor || d.timestamp;\n\nif (!timestamp) {\n    timestamp = new Date().toISOString().slice(0, 19).replace(\"T\", \" \");\n}\n\ntimestamp = sqlString(timestamp);\n\nmsg.topic = `\nINSERT INTO datos_brutos (\n    node_id,\n    temperatura,\n    humedad_aire,\n    humedad_suelo,\n    timestamp_sensor\n)\nVALUES (\n    '${nodeId}',\n    ${temperatura},\n    ${humedadAire},\n    ${humedadSuelo},\n    '${timestamp}'\n);\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1220,
+        "wires": [
+            [
+                "fa2c03b3e8eca1d5"
+            ]
+        ]
+    },
+    {
+        "id": "b1df2062e756b3e8",
+        "type": "json",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 1220,
+        "wires": [
+            [
+                "f708551897bafad3"
+            ]
+        ]
+    },
+    {
+        "id": "fa2c03b3e8eca1d5",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 690,
+        "y": 1220,
+        "wires": [
+            [
+                "e2186d97c9d03e51"
+            ]
+        ]
+    },
+    {
+        "id": "e2186d97c9d03e51",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta datos brutos ",
+        "func": "msg.payload = {\n    ok: true,\n    mensaje: \"Dato bruto insertado correctamente\",\n    insertId: msg.payload.insertId\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1220,
+        "wires": [
+            [
+                "8f03b88390b459cd"
+            ]
+        ]
+    },
+    {
+        "id": "8f03b88390b459cd",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1130,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "2cce5dc35f4e40b4",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Preparar actuacion",
+        "func": "let d = msg.payload;\n\nif (typeof d === \"string\") {\n    try {\n        d = JSON.parse(d);\n    } catch (error) {\n        msg.statusCode = 400;\n        msg.payload = {\n            ok: false,\n            error: \"El body no es un JSON valido\",\n            recibido: msg.payload\n        };\n        return [null, msg];\n    }\n}\n\nlet nodeId = String(d.node_id || \"\").trim();\nlet estado = String(d.estado || \"\").trim().toUpperCase();\n\nif (estado !== \"ON\" && estado !== \"OFF\") {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        error: \"El campo estado debe ser ON u OFF\",\n        recibido: d\n    };\n    return [null, msg];\n}\n\nlet topic = null;\n\nif (nodeId === \"ESP32_1\" || nodeId === \"SIM_1\") {\n    topic = \"Parcial2_Bomba\";\n}\n\nif (nodeId === \"PYTHON_VIRTUAL_1\") {\n    topic = \"Parcial2_Pagina\";\n}\n\nif (!topic) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        error: \"node_id no reconocido\",\n        recibido: d\n    };\n    return [null, msg];\n}\n\nlet msgMqtt = {\n    topic: topic,\n    payload: estado\n};\n\nlet msgRespuesta = {\n    req: msg.req,\n    res: msg.res,\n    statusCode: 200,\n    payload: {\n        ok: true,\n        mensaje: \"Actuacion enviada correctamente\",\n        node_id: nodeId,\n        topic: topic,\n        estado: estado\n    }\n};\n\nreturn [msgMqtt, msgRespuesta];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1360,
+        "wires": [
+            [
+                "7b6f79fe4568f638",
+                "a170795d92be56d8"
+            ],
+            [
+                "bd2c8fcb6c173fbb",
+                "62799f3af7f87dc6"
+            ]
+        ]
+    },
+    {
+        "id": "20bf58c303655307",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Post actuacion",
+        "url": "/api/actuacion",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 1360,
+        "wires": [
+            [
+                "2cce5dc35f4e40b4"
+            ]
+        ]
+    },
+    {
+        "id": "bd2c8fcb6c173fbb",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 590,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "7b6f79fe4568f638",
+        "type": "mqtt out",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ce5b0ce08f970127",
+        "x": 570,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "3ce6242f8dd179ef",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Post incidencias",
+        "url": "/api/incidencias",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 1500,
+        "wires": [
+            [
+                "9190b270743d94bb"
+            ]
+        ]
+    },
+    {
+        "id": "0998eb397590df5a",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL insertar incidencias",
+        "func": "let d = msg.payload;\n\n// Si llega como texto JSON, convertirlo a objeto\nif (typeof d === \"string\") {\n    try {\n        d = JSON.parse(d);\n    } catch (e) {\n        msg.statusCode = 400;\n        msg.payload = {\n            ok: false,\n            error: \"Body JSON invalido\",\n            recibido: msg.payload\n        };\n        return msg;\n    }\n}\n\nfunction sqlString(value) {\n    if (value === undefined || value === null) {\n        return \"\";\n    }\n    return String(value).replace(/'/g, \"''\");\n}\n\nfunction sqlNullable(value) {\n    if (value === undefined || value === null || value === \"\") {\n        return \"NULL\";\n    }\n    return `'${sqlString(value)}'`;\n}\n\nlet lecturaId = Number(d.lectura_bruta_id);\n\nif (isNaN(lecturaId) || lecturaId <= 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        error: \"lectura_bruta_id es obligatorio y debe ser numerico\",\n        payload_recibido: d\n    };\n    return msg;\n}\n\nlet tipoIncidencia = sqlString(d.tipo_incidencia);\n\nif (!tipoIncidencia) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        error: \"tipo_incidencia es obligatorio\",\n        payload_recibido: d\n    };\n    return msg;\n}\n\nlet nodeId = sqlNullable(d.node_id);\nlet campoAfectado = sqlNullable(d.campo_afectado);\nlet valorOriginal = sqlNullable(d.valor_original);\nlet valorCorregido = sqlNullable(d.valor_corregido);\nlet metodoAplicado = sqlNullable(d.metodo_aplicado);\nlet descripcion = sqlNullable(d.descripcion);\n\nmsg.topic = `\nINSERT INTO incidencias (\n    lectura_bruta_id,\n    node_id,\n    campo_afectado,\n    tipo_incidencia,\n    valor_original,\n    valor_corregido,\n    metodo_aplicado,\n    descripcion\n)\nVALUES (\n    ${lecturaId},\n    ${nodeId},\n    ${campoAfectado},\n    '${tipoIncidencia}',\n    ${valorOriginal},\n    ${valorCorregido},\n    ${metodoAplicado},\n    ${descripcion}\n);\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1500,
+        "wires": [
+            [
+                "dc44fc283e442ee9",
+                "a0a9820261481bc8"
+            ]
+        ]
+    },
+    {
+        "id": "dc44fc283e442ee9",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 670,
+        "y": 1500,
+        "wires": [
+            [
+                "110102ce83c9a270"
+            ]
+        ]
+    },
+    {
+        "id": "110102ce83c9a270",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta incidencia",
+        "func": "msg.payload = {\n    ok: true,\n    mensaje: \"Incidencia registrada correctamente\",\n    insertId: msg.payload.insertId\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1500,
+        "wires": [
+            [
+                "a159737f921d5d36"
+            ]
+        ]
+    },
+    {
+        "id": "a159737f921d5d36",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1130,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "a0a9820261481bc8",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "a170795d92be56d8",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "9190b270743d94bb",
+        "type": "json",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 1500,
+        "wires": [
+            [
+                "0998eb397590df5a"
+            ]
+        ]
+    },
+    {
+        "id": "62799f3af7f87dc6",
+        "type": "debug",
+        "z": "639adf2aad14446c",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "b9ab6e6e421a4091",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Limite de limpieza",
+        "func": "let d = msg.payload;\n\n// Convertir body si llega como texto JSON\nif (typeof d === \"string\") {\n    if (d.trim() === \"\") {\n        d = {};\n    } else {\n        try {\n            d = JSON.parse(d);\n        } catch (error) {\n            msg.statusCode = 400;\n            msg.payload = {\n                ok: false,\n                error: \"El body no es un JSON valido\",\n                recibido: msg.payload\n            };\n            return msg;\n        }\n    }\n}\n\nlet limite = Number(d.limite || 50);\n\nif (isNaN(limite) || limite <= 0) {\n    limite = 50;\n}\n\nif (limite > 100) {\n    limite = 100;\n}\n\nmsg.limite_limpieza = limite;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1760,
+        "wires": [
+            [
+                "b6ca75f17b44e50f"
+            ]
+        ]
+    },
+    {
+        "id": "c8475505a1d907ae",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Post limpiar lote",
+        "url": "/api/limpiar-lote",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 1760,
+        "wires": [
+            [
+                "b9ab6e6e421a4091"
+            ]
+        ]
+    },
+    {
+        "id": "2bcae43d1b7f6d03",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1170,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "b6ca75f17b44e50f",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Insertar incidencias lote ",
+        "func": "let limite = msg.limite_limpieza || 50;\n\nmsg.topic = `\nINSERT INTO incidencias (\n    lectura_bruta_id,\n    node_id,\n    campo_afectado,\n    tipo_incidencia,\n    valor_original,\n    valor_corregido,\n    metodo_aplicado,\n    descripcion\n)\nSELECT\n    db.id,\n    db.node_id,\n\n    CONCAT_WS(',',\n        CASE\n            WHEN db.temperatura IS NULL OR db.temperatura < 0 OR db.temperatura > 60\n            THEN 'temperatura'\n        END,\n        CASE\n            WHEN db.humedad_aire IS NULL OR db.humedad_aire < 0 OR db.humedad_aire > 100\n            THEN 'humedad_aire'\n        END,\n        CASE\n            WHEN db.humedad_suelo IS NULL OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n            THEN 'humedad_suelo'\n        END\n    ) AS campo_afectado,\n\n    CONCAT_WS(',',\n        CASE\n            WHEN db.temperatura IS NULL\n              OR db.humedad_aire IS NULL\n              OR db.humedad_suelo IS NULL\n            THEN 'valor_nulo'\n        END,\n        CASE\n            WHEN db.temperatura < 0 OR db.temperatura > 60\n              OR db.humedad_aire < 0 OR db.humedad_aire > 100\n              OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n            THEN 'valor_fuera_rango'\n        END\n    ) AS tipo_incidencia,\n\n    JSON_OBJECT(\n        'temperatura', db.temperatura,\n        'humedad_aire', db.humedad_aire,\n        'humedad_suelo', db.humedad_suelo\n    ) AS valor_original,\n\n    JSON_OBJECT(\n        'temperatura',\n            CASE\n                WHEN db.temperatura IS NULL OR db.temperatura < 0 OR db.temperatura > 60\n                THEN 25\n                ELSE db.temperatura\n            END,\n        'humedad_aire',\n            CASE\n                WHEN db.humedad_aire IS NULL OR db.humedad_aire < 0 OR db.humedad_aire > 100\n                THEN 60\n                ELSE db.humedad_aire\n            END,\n        'humedad_suelo',\n            CASE\n                WHEN db.humedad_suelo IS NULL OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n                THEN 2800\n                ELSE db.humedad_suelo\n            END\n    ) AS valor_corregido,\n\n    'api_rest_limpieza_lote' AS metodo_aplicado,\n\n    'Incidencia detectada durante limpieza por lote desde API REST' AS descripcion\n\nFROM (\n    SELECT db.*\n    FROM datos_brutos db\n    LEFT JOIN datos_limpios dl\n        ON db.id = dl.lectura_bruta_id\n    WHERE dl.lectura_bruta_id IS NULL\n    ORDER BY db.id ASC\n    LIMIT ${limite}\n) db\nWHERE\n    db.temperatura IS NULL\n    OR db.temperatura < 0\n    OR db.temperatura > 60\n    OR db.humedad_aire IS NULL\n    OR db.humedad_aire < 0\n    OR db.humedad_aire > 100\n    OR db.humedad_suelo IS NULL\n    OR db.humedad_suelo < 0\n    OR db.humedad_suelo > 4095;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1760,
+        "wires": [
+            [
+                "a7ad01ac1227bac6"
+            ]
+        ]
+    },
+    {
+        "id": "a7ad01ac1227bac6",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Insertar datos limpios lote",
+        "func": "let limite = msg.limite_limpieza || 50;\n\nmsg.topic = `\nINSERT IGNORE INTO datos_limpios (\n    lectura_bruta_id,\n    incidencia_id,\n    node_id,\n    temperatura,\n    humedad_aire,\n    humedad_suelo,\n    timestamp_sensor\n)\nSELECT\n    db.id,\n\n    (\n        SELECT i.id\n        FROM incidencias i\n        WHERE i.lectura_bruta_id = db.id\n        ORDER BY i.id DESC\n        LIMIT 1\n    ) AS incidencia_id,\n\n    db.node_id,\n\n    CASE\n        WHEN db.temperatura IS NULL OR db.temperatura < 0 OR db.temperatura > 60\n        THEN 25\n        ELSE db.temperatura\n    END AS temperatura,\n\n    CASE\n        WHEN db.humedad_aire IS NULL OR db.humedad_aire < 0 OR db.humedad_aire > 100\n        THEN 60\n        ELSE db.humedad_aire\n    END AS humedad_aire,\n\n    CASE\n        WHEN db.humedad_suelo IS NULL OR db.humedad_suelo < 0 OR db.humedad_suelo > 4095\n        THEN 2800\n        ELSE db.humedad_suelo\n    END AS humedad_suelo,\n\n    db.timestamp_sensor\n\nFROM (\n    SELECT db.*\n    FROM datos_brutos db\n    LEFT JOIN datos_limpios dl\n        ON db.id = dl.lectura_bruta_id\n    WHERE dl.lectura_bruta_id IS NULL\n    ORDER BY db.id ASC\n    LIMIT ${limite}\n) db;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1760,
+        "wires": [
+            [
+                "a5d148eb66587775"
+            ]
+        ]
+    },
+    {
+        "id": "a5d148eb66587775",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta limpiar lote",
+        "func": "msg.payload = {\n    ok: true,\n    mensaje: \"Limpieza por lote ejecutada correctamente\",\n    limite_procesado: msg.limite_limpieza || 50,\n    resultado_mysql: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 1760,
+        "wires": [
+            [
+                "2bcae43d1b7f6d03"
+            ]
+        ]
+    },
+    {
+        "id": "19050fbeb7e89038",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Post calcular metricas",
+        "url": "/api/metricas/calcular",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 1840,
+        "wires": [
+            [
+                "25f7abee7501b189"
+            ]
+        ]
+    },
+    {
+        "id": "25f7abee7501b189",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Consultar lote metricas api ",
+        "func": "let d = msg.payload;\n\n// Convertir body si llega como texto JSON\nif (typeof d === \"string\") {\n    if (d.trim() === \"\") {\n        d = {};\n    } else {\n        try {\n            d = JSON.parse(d);\n        } catch (error) {\n            msg.statusCode = 400;\n            msg.payload = {\n                ok: false,\n                error: \"El body no es un JSON valido\",\n                recibido: msg.payload\n            };\n            return msg;\n        }\n    }\n}\n\nlet limite = Number(d.limite || 50);\n\nif (isNaN(limite) || limite <= 0) {\n    limite = 50;\n}\n\nif (limite > 200) {\n    limite = 200;\n}\n\nmsg.limite_metricas = limite;\n\nmsg.topic = `\nSELECT\n    dl.lectura_bruta_id,\n    dl.incidencia_id,\n    dl.node_id,\n    dl.temperatura,\n    dl.humedad_aire,\n    dl.humedad_suelo,\n    DATE_FORMAT(dl.timestamp_sensor, '%Y-%m-%d %H:%i:%s') AS timestamp_sensor,\n    i.tipo_incidencia,\n    i.metodo_aplicado\nFROM (\n    SELECT *\n    FROM datos_limpios\n    ORDER BY lectura_bruta_id DESC\n    LIMIT ${limite}\n) dl\nLEFT JOIN incidencias i\n    ON dl.incidencia_id = i.id\nORDER BY dl.lectura_bruta_id ASC;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1840,
+        "wires": [
+            [
+                "5a8b1903a319cfbc"
+            ]
+        ]
+    },
+    {
+        "id": "5a8b1903a319cfbc",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "5429c8fdddb5af90",
+        "name": "",
+        "x": 610,
+        "y": 1840,
+        "wires": [
+            [
+                "9cda879ed347164a"
+            ]
+        ]
+    },
+    {
+        "id": "9cda879ed347164a",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta Metricas",
+        "func": "msg.payload = {\n    ok: true,\n    mensaje: \"Metricas calculadas e insertadas correctamente\",\n    limite_usado: msg.limite_metricas || 50,\n    resultado_mysql: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1840,
+        "wires": [
+            [
+                "00bb9c7ef95cf9e0"
+            ]
+        ]
+    },
+    {
+        "id": "00bb9c7ef95cf9e0",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1010,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "e1e5e13ac6fce5e8",
+        "type": "http in",
+        "z": "639adf2aad14446c",
+        "name": "Get estado nodos ",
+        "url": "/api/estado-nodos",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 1140,
+        "wires": [
+            [
+                "339b590b018bd47b"
+            ]
+        ]
+    },
+    {
+        "id": "339b590b018bd47b",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "SQL estado nodos",
+        "func": "msg.topic = `\nSELECT\n    db.id,\n    db.node_id,\n    db.temperatura,\n    db.humedad_aire,\n    db.humedad_suelo,\n    DATE_FORMAT(db.timestamp_sensor, '%Y-%m-%d %H:%i:%s') AS timestamp_sensor,\n\n    CASE\n        WHEN db.humedad_suelo > 3000 AND db.temperatura > 30\n        THEN 'ON'\n        ELSE 'OFF'\n    END AS estado_riego,\n\n    CASE\n        WHEN db.humedad_suelo > 3000 AND db.temperatura > 30\n        THEN 'Necesita riego'\n        WHEN db.humedad_suelo > 3000\n        THEN 'Suelo seco'\n        WHEN db.humedad_suelo <= 2500\n        THEN 'Suelo normal'\n        ELSE 'Estado intermedio'\n    END AS estado_sistema\n\nFROM datos_brutos db\nINNER JOIN (\n    SELECT \n        node_id,\n        MAX(id) AS ultimo_id\n    FROM datos_brutos\n    GROUP BY node_id\n) ultimos\n    ON db.node_id = ultimos.node_id\n   AND db.id = ultimos.ultimo_id\nORDER BY db.node_id;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1140,
+        "wires": [
+            [
+                "4ad2db109295ac28"
+            ]
+        ]
+    },
+    {
+        "id": "4ad2db109295ac28",
+        "type": "mysql",
+        "z": "639adf2aad14446c",
+        "mydb": "858d547e3eee15ec",
+        "name": "",
+        "x": 570,
+        "y": 1140,
+        "wires": [
+            [
+                "878346538ff95378"
+            ]
+        ]
+    },
+    {
+        "id": "878346538ff95378",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Respuesta estado nodos",
+        "func": "msg.payload = {\n    ok: true,\n    total: msg.payload.length,\n    datos: msg.payload\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 1140,
+        "wires": [
+            [
+                "9e93c9f0f38f0863"
+            ]
+        ]
+    },
+    {
+        "id": "9e93c9f0f38f0863",
+        "type": "http response",
+        "z": "639adf2aad14446c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 1140,
+        "wires": []
+    }
+]

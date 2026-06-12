@@ -1,0 +1,22 @@
+[
+    {
+        "id": "d57b2db4d6296d9e",
+        "type": "function",
+        "z": "639adf2aad14446c",
+        "name": "Consultar lotes para metricas",
+        "func": "msg.topic = `\nSELECT\n    dl.lectura_bruta_id,\n    dl.incidencia_id,\n    dl.node_id,\n    dl.temperatura,\n    dl.humedad_aire,\n    dl.humedad_suelo,\n    DATE_FORMAT(dl.timestamp_sensor, '%Y-%m-%d %H:%i:%s') AS timestamp_sensor,\n    i.tipo_incidencia,\n    i.metodo_aplicado\nFROM (\n    SELECT *\n    FROM datos_limpios\n    ORDER BY fecha_limpieza DESC\n    LIMIT 70\n) dl\nLEFT JOIN incidencias i\n    ON dl.incidencia_id = i.id\nORDER BY dl.lectura_bruta_id ASC;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 700,
+        "wires": [
+            [
+                "1fa6a6b4f3a380e4"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materita Virtual IoT</title>
+
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #d8f3dc, #b7e4c7, #95d5b2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .card {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 28px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(27, 67, 50, 0.25);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      overflow: hidden;
+    }
+
+    .header {
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #1b4332;
+      font-size: 30px;
+    }
+
+    .subtitulo {
+      margin: 8px 0 0;
+      color: #52796f;
+      font-size: 14px;
+    }
+
+    .conexion {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #f1f8f4;
+      color: #52796f;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .punto {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #f4a261;
+      box-shadow: 0 0 0 4px rgba(244, 162, 97, 0.18);
+    }
+
+    .punto.conectado {
+      background: #2d6a4f;
+      box-shadow: 0 0 0 4px rgba(45, 106, 79, 0.18);
+    }
+
+    .visual {
+      position: relative;
+      margin: 24px auto 10px;
+      min-height: 270px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #f7fff9 0%, #e9f7ef 100%);
+      border-radius: 24px;
+      border: 1px solid #d8f3dc;
+    }
+
+    .agua {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 38px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .agua.activa {
+      opacity: 1;
+      animation: caerAgua 0.9s infinite;
+    }
+
+    @keyframes caerAgua {
+      0% {
+        transform: translate(-50%, -12px);
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, 26px);
+        opacity: 0;
+      }
+    }
+
+    .planta-img {
+      width: 250px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 22px;
+      transition: transform 0.35s ease, filter 0.35s ease, box-shadow 0.35s ease;
+      filter: drop-shadow(0 12px 16px rgba(27, 67, 50, 0.18));
+    }
+
+    .planta-img.regando {
+      animation: moverPlanta 0.9s infinite alternate;
+      filter: drop-shadow(0 14px 18px rgba(45, 106, 79, 0.28));
+    }
+
+    @keyframes moverPlanta {
+      from {
+        transform: scale(1) rotate(-1deg);
+      }
+      to {
+        transform: scale(1.04) rotate(1deg);
+      }
+    }
+
+    .estado {
+      margin: 16px 0 18px;
+      padding: 14px 18px;
+      border-radius: 18px;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .estado.on {
+      background: #d8f3dc;
+      color: #1b7f3a;
+      border: 1px solid #95d5b2;
+    }
+
+    .estado.off {
+      background: #ffe5e5;
+      color: #b00020;
+      border: 1px solid #ffb3b3;
+    }
+
+    .datos {
+      background: #f8fbf9;
+      border-radius: 20px;
+      padding: 18px;
+      text-align: left;
+      border: 1px solid #d8f3dc;
+    }
+
+    .datos h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      color: #1b4332;
+      text-align: center;
+    }
+
+    .grid-datos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .dato {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 12px;
+      border: 1px solid #e6f3eb;
+    }
+
+    .dato.full {
+      grid-column: 1 / -1;
+    }
+
+    .label {
+      display: block;
+      color: #6b7c73;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .valor {
+      color: #1b4332;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .nota {
+      margin: 14px 0 0;
+      font-size: 12px;
+      color: #6b7c73;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .grid-datos {
+        grid-template-columns: 1fr;
+      }
+
+      .planta-img {
+        width: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="header">
+        <h1>Materita Virtual</h1>
+        <p class="subtitulo">Simulación IoT conectada a Node-RED por MQTT</p>
+
+        <div class="conexion">
+          <span id="puntoConexion" class="punto"></span>
+          <span id="conexionTexto">Conectando a MQTT...</span>
+        </div>
+      </div>
+
+      <div class="visual">
+        <div id="agua" class="agua">💧💧💧</div>
+        <img id="planta" class="planta-img" src="materita.jpg" alt="Materita virtual" />
+      </div>
+
+      <div id="estado" class="estado off">Bomba virtual: OFF</div>
+
+      <div class="datos">
+        <h2>Lectura del sensor virtual</h2>
+
+        <div class="grid-datos">
+          <div class="dato">
+            <span class="label">Temperatura</span>
+            <span class="valor"><span id="temperatura">--</span> °C</span>
+          </div>
+
+          <div class="dato">
+            <span class="label">Humedad aire</span>
+            <span class="valor"><span id="humedadAire">--</span> %</span>
+          </div>
+
+          <div class="dato">
+            <span class="label">Humedad suelo</span>
+            <span class="valor" id="humedadSuelo">--</span>
+          </div>
+
+          <div class="dato">
+            <span class="label">Node ID</span>
+            <span class="valor" id="nodeId">--</span>
+          </div>
+
+          <div class="dato full">
+            <span class="label">Última lectura</span>
+            <span class="valor" id="timestamp">--</span>
+          </div>
+        </div>
+
+        <p class="nota">
+          Recuerda: en tu sensor analógico, un valor alto significa suelo seco y un valor bajo significa suelo húmedo.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const MQTT_HOST = "wss://00bb4b8f25504bcb8380dce5fdd8cf37.s1.eu.hivemq.cloud:8884/mqtt";
+    const MQTT_USER = "Parcial2_Datos";
+    const MQTT_PASS = "Parcial2_Datos";
+
+    const TOPIC_DATOS = "Parcial2_Datos";
+    const TOPIC_ACTUACION_PAGINA = "Parcial2_Pagina";
+
+    const IMAGEN_NORMAL = "materita.jpg";
+    const IMAGEN_REGANDO = "materitaregandose.png";
+
+    const client = mqtt.connect(MQTT_HOST, {
+      username: MQTT_USER,
+      password: MQTT_PASS,
+      clientId: "Pagina_Materita_" + Math.random().toString(16).substring(2, 10),
+      clean: true,
+      connectTimeout: 4000,
+      reconnectPeriod: 2000
+    });
+
+    const conexionTexto = document.getElementById("conexionTexto");
+    const puntoConexion = document.getElementById("puntoConexion");
+    const estado = document.getElementById("estado");
+    const planta = document.getElementById("planta");
+    const agua = document.getElementById("agua");
+
+    const temperatura = document.getElementById("temperatura");
+    const humedadAire = document.getElementById("humedadAire");
+    const humedadSuelo = document.getElementById("humedadSuelo");
+    const timestamp = document.getElementById("timestamp");
+    const nodeId = document.getElementById("nodeId");
+
+    client.on("connect", () => {
+      conexionTexto.textContent = "Conectado a MQTT";
+      puntoConexion.classList.add("conectado");
+
+      client.subscribe(TOPIC_DATOS);
+      client.subscribe(TOPIC_ACTUACION_PAGINA);
+    });
+
+    client.on("reconnect", () => {
+      conexionTexto.textContent = "Reconectando a MQTT...";
+      puntoConexion.classList.remove("conectado");
+    });
+
+    client.on("error", (error) => {
+      conexionTexto.textContent = "Error MQTT: " + error.message;
+      puntoConexion.classList.remove("conectado");
+    });
+
+    client.on("message", (topic, message) => {
+      const texto = message.toString().trim();
+
+      if (topic === TOPIC_DATOS) {
+        try {
+          const datos = JSON.parse(texto);
+
+          if (datos.node_id === "PYTHON_VIRTUAL_1") {
+            actualizarDatos(datos);
+          }
+        } catch (error) {
+          console.log("Mensaje no JSON en Parcial2_Datos", texto);
+        }
+      }
+
+      if (topic === TOPIC_ACTUACION_PAGINA) {
+        actualizarActuacion(texto);
+      }
+    });
+
+    function actualizarDatos(datos) {
+      temperatura.textContent = datos.temperatura ?? "--";
+      humedadAire.textContent = datos.humedad_aire ?? "--";
+      humedadSuelo.textContent = datos.humedad_suelo ?? "--";
+      timestamp.textContent = datos.timestamp ?? "--";
+      nodeId.textContent = datos.node_id ?? "--";
+    }
+
+    function actualizarActuacion(comando) {
+      if (comando === "ON") {
+        estado.textContent = "Bomba virtual: ON - Regando materita";
+        estado.className = "estado on";
+        planta.classList.add("regando");
+        agua.classList.add("activa");
+        planta.src = IMAGEN_REGANDO;
+      }
+
+      if (comando === "OFF") {
+        estado.textContent = "Bomba virtual: OFF";
+        estado.className = "estado off";
+        planta.classList.remove("regando");
+        agua.classList.remove("activa");
+        planta.src = IMAGEN_NORMAL;
+      }
+    }
+  </script>
+</body>
+</html>
